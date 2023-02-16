@@ -25,26 +25,23 @@ export default {
 
 
 <template>
-   <h1>ciao ciao</h1>
-   <section class="bg-green">
+   <section class="">
       <div class="text-center text-primary pt-4">
          <h1>Lista prgetti</h1>
       </div>
       <div class="">
          <div class="container py-5">
             <div class="row g-4">
-
-               <div class="col-3">
-                  <div class="card text-center bg-success">
+               <div class="col-3" v-for="project in project" :key="project.id">
+                  <div class="card text-center bg-success" >
                      <img src="{{  }}" class="card-img-top" alt="...">
                      <div class="card-body p-0 py-3">
-                        <h3 class="card-title">{{ }}</h3>
-                        <h5>Descrizione: {{ }}</h5>
-                        <h5>GitHub Link: {{ }}</h5>
+                        <h3 class="card-title">{{ project.name }}</h3>
+                        <h5>Descrizione: {{ project.description }}</h5>
+                        <h5>GitHub Link: {{ project.github_link }}</h5>
                      </div>
                   </div>
                </div>
-
             </div>
          </div>
       </div>
