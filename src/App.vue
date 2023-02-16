@@ -1,7 +1,9 @@
 <script>
+import ProjectCards from "./components/ProjectCards.vue"
 import axios from "axios";
 
 export default {
+  components: {ProjectCards},
   data() {
     return {
       mioUrl: "http://localhost:8000",
@@ -15,7 +17,7 @@ export default {
       });
     },
   },
-  beforeMount() {},
+  beforeMount() { },
   mounted() {
     this.fetchProject();
   },
@@ -23,8 +25,11 @@ export default {
 </script>
 
 <template>
-  <div>
+  <div class="container">
     <h1>funziona?</h1>
+    <div>
+      <ProjectCards></ProjectCards>
+    </div>
 </div>
 </template>
 
