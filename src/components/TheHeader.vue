@@ -8,8 +8,8 @@ export default {
           routeName: "home",
         },
         {
-          label: "Posts",
-          routeName: "posts.index",
+          label: "Project",
+          routeName: "projects.index",
         },
         {
           label: "Chi Siamo",
@@ -37,6 +37,9 @@ export default {
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item" v-for="(item, index) in menuItems" :key="index">
+              <router-link to="{ name: item.routeName }">
+                {{ item.label }}
+              </router-link>
               <a class="nav-link active" aria-current="page" href="#">{{ item.label }}</a>
             </li>
             <li class="nav-item dropdown">

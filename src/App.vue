@@ -34,6 +34,9 @@ export default {
     <div>
       <ProjectCards></ProjectCards>
     </div>
+    <div>
+      <router-view></router-view>
+    </div>
 </div>
 </template>
 
