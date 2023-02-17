@@ -9,15 +9,11 @@ export default {
         },
         {
           label: "Project",
-          routeName: "projects.index",
-        },
-        {
-          label: "Chi Siamo",
-          routeName: "about",
+          routeName: "project",
         },
         {
           label: "Contatti",
-          routeName: "contacts",
+          routeName: "contatti",
         },
       ],
     };
@@ -35,12 +31,12 @@ export default {
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item" v-for="(item, index) in menuItems" :key="index">
-              <router-link to="{ name: item.routeName }">
+          <ul class="navbar-nav d-flex align-items-center">
+            <li class="nav-item mx-2" v-for="(item, index) in menuItems" :key="index">
+              <router-link :to="{ name: item.routeName }">
                 {{ item.label }}
               </router-link>
-              <a class="nav-link active" aria-current="page" href="#">{{ item.label }}</a>
+              <!-- <a class="nav-link active" aria-current="page" href="#">{{ item.label }}</a> -->
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
