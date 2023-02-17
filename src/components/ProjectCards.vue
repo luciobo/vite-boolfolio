@@ -33,7 +33,7 @@ export default {
          <div class="container py-5">
             <div class="row g-4">
                <div class="col-3" v-for="project in project" :key="project.id">
-                  <div class="card text-center bg-success">
+                  <div class="card text-center bg-success h-100">
                      <img :src="project.cover_img" class="card-img-top" alt="...">
                      <div class="card-body p-0 py-3">
                         <h3 class="card-title">{{ project.name }}</h3>
@@ -51,4 +51,6 @@ export default {
 
 
 
-<style scoped></style>
+<style scoped>
+
+</style>

@@ -1,9 +1,11 @@
 <script>
 import ProjectCards from "./components/ProjectCards.vue"
+import TheHeader from "./components/TheHeader.vue"
+
 import axios from "axios";
 
 export default {
-  components: {ProjectCards},
+  components: {ProjectCards,TheHeader},
   data() {
     return {
       mioUrl: "http://localhost:8000",
@@ -26,11 +28,17 @@ export default {
 
 <template>
   <div class="container">
-    <h1>funziona?</h1>
+    <div>
+      <TheHeader></TheHeader>
+    </div>
     <div>
       <ProjectCards></ProjectCards>
     </div>
 </div>
 </template>
 
-<style lang="scss">@use "styles/main";</style>
+<style lang="scss">
+
+@use "styles/main";
+
+</style>
