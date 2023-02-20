@@ -2,6 +2,7 @@
 <script>
 import axios from "axios";
 export default {
+  name: "Project",
   data() {
     return {
       mioUrl: "http://localhost:8000",
@@ -37,6 +38,7 @@ export default {
             <div class="card text-center bg-success h-100">
               <img :src="project.cover_img" class="card-img-top" alt="...">
               <div class="card-body p-0 py-3">
+                <router-link :to="{name: 'Show', params: {id: project.id}}">{{ project.name }}</router-link>
                 <h3 class="card-title">{{ project.name }}</h3>
                 <h5>Descrizione: {{ project.description }}</h5>
                 <h5>GitHub Link: {{ project.github_link }}</h5>

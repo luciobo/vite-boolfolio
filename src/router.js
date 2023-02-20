@@ -3,6 +3,8 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from "./pages/Home.vue";
 import Project from "./pages/Project.vue";
 import Contatti from "./pages/Contatti.vue";
+import Show from "./pages/Show.vue";
+
 
 
 // import PostsShowPage from "./pages/posts/Show.vue";
@@ -28,12 +30,12 @@ const router = createRouter({
       component: Contatti // componente che ritorna l'html della pagina
     },
     // ... altre rotte
-    // {
-    //   // Show di un singolo post
-    //   path: "/show/:id",
-    //   name: "show",
-    //   component: PostsShowPage
-    // }
+    {
+      // Show di un singolo post
+      path: "/Project/:id",
+      name: "Show",
+      component: Show
+    }
   ]
 });
 
