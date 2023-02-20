@@ -32,7 +32,7 @@ export default {
       <TheHeader></TheHeader>
     </div>
     <div>
-      <ProjectCards></ProjectCards>
+      <!-- <ProjectCards></ProjectCards> -->
     </div>
     <div>
       <router-view></router-view>

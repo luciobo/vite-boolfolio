@@ -56,4 +56,11 @@ export default {
 </section>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+</style>

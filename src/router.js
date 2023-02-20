@@ -30,8 +30,8 @@ const router = createRouter({
     // ... altre rotte
     // {
     //   // Show di un singolo post
-    //   path: "/project/:id",
-    //   name: "project.show",
+    //   path: "/show/:id",
+    //   name: "show",
     //   component: PostsShowPage
     // }
   ]

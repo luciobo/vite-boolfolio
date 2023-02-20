@@ -1,9 +1,9 @@
 
 <script>
-name:"Home"
+name:"Show"
 </script>
 
 <template>
 
-<h1>Home</h1>
+<h1>stocazzo</h1>
 </template>
